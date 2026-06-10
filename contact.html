@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avya | Contact</title>
+  <meta name="description" content="Contact Avya for IT support, development, automation, and website services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="site-shell nav">
+      <a class="brand" href="index.html"><span class="brand-mark">A</span><span>Avya</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="ghost-btn" href="contact.html">Talk to me</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="site-shell">
+    <section class="page-intro">
+      <article class="intro">
+        <div class="eyebrow">✦ Contact</div>
+        <h2>Let’s discuss your next IT or digital project.</h2>
+        <p>I can help with support, automation, app development, websites, and business implementation needs. Reach out with your goal and I’ll guide you from there.</p>
+      </article>
+      <article class="feature-card">
+        <h2>Get in touch</h2>
+        <p>Use the details below for quick contact, project discussion, or to request a consultation.</p>
+      </article>
+    </section>
+
+    <section class="contact-grid" style="margin-top: 14px;">
+      <article class="contact-card">
+        <div class="contact-list">
+          <div class="contact-item"><strong>Email</strong><a href="mailto:grvsahai@gmail.com">grvsahai@gmail.com</a></div>
+          <div class="contact-item"><strong>Mobile</strong><a href="tel:+917703851583">+91 77038 51583</a></div>
+          <div class="contact-item"><strong>Location</strong><span>Remote / India-based support for clients worldwide</span></div>
+          <div class="contact-item"><strong>Best for</strong><span>IT support, automation, websites, web apps, implementation, and business digital tools</span></div>
+        </div>
+      </article>
+      <article class="contact-card">
+        <h3 style="margin-top: 0;">What to send</h3>
+        <p class="contact-note">Share your project idea, current challenge, timeline, and what you want to improve. I’ll reply with a practical recommendation and next steps.</p>
+        <a class="pill-btn" href="mailto:grvsahai@gmail.com">Start a conversation</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-shell">© 2026 Avya • Freelance IT & Digital Solutions</footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = document.body.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+    }
+  </script>
+</body>
+</html>

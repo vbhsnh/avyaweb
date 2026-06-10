@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avya | Services</title>
+  <meta name="description" content="Freelancer services including IT support, app development, automation, bulk SMS, Zoom call automation, implementation, websites, and web apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="site-shell nav">
+      <a class="brand" href="index.html"><span class="brand-mark">A</span><span>Avya</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="ghost-btn" href="contact.html">Talk to me</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="site-shell">
+    <section class="page-intro">
+      <article class="intro">
+        <div class="eyebrow">✦ Services</div>
+        <h2>Tailored support for businesses that need practical technology.</h2>
+        <p>I provide end-to-end support and implementation across everyday systems and digital tools, so your team spends less time on manual work and more time delivering results.</p>
+      </article>
+      <article class="feature-card">
+        <h2>What you can get</h2>
+        <p>From quick support fixes to full digital workflows, every service is designed to be clear, useful, and easy to adopt.</p>
+      </article>
+    </section>
+
+    <section class="services-grid" style="margin-top: 14px;">
+      <article class="service-card"><div class="icon">🛠️</div><h3>IT Support</h3><p>Setup help, troubleshooting, system guidance, and practical maintenance for teams that need dependable support.</p></article>
+      <article class="service-card"><div class="icon">📱</div><h3>App Development</h3><p>Build custom tools for operations, client service, or business processes that save effort and improve efficiency.</p></article>
+      <article class="service-card"><div class="icon">⚙️</div><h3>Automation</h3><p>Automate repetitive tasks, approvals, reminders, reporting, and workflow steps using smart integrations.</p></article>
+      <article class="service-card"><div class="icon">📨</div><h3>Bulk SMS</h3><p>Send timely messages for updates, promotions, reminders, and customer engagement with reliable delivery.</p></article>
+      <article class="service-card"><div class="icon">🎥</div><h3>Zoom Call Automation</h3><p>Automate meeting schedules, reminders, follow-up emails, and routine actions around your virtual calls.</p></article>
+      <article class="service-card"><div class="icon">🏗️</div><h3>IT Implementation</h3><p>Deploy systems, tools, and processes with clean planning, setup, and rollout support for smooth adoption.</p></article>
+      <article class="service-card"><div class="icon">🌐</div><h3>Website Development</h3><p>Launch modern websites that look professional, convert better, and communicate your brand clearly.</p></article>
+      <article class="service-card"><div class="icon">💡</div><h3>Web Apps</h3><p>Create interactive dashboards, forms, and tools for managing leads, clients, tasks, and internal operations.</p></article>
+    </section>
+  </main>
+
+  <footer class="site-shell">© 2026 Avya • Freelance IT & Digital Solutions</footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = document.body.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+    }
+  </script>
+</body>
+</html>

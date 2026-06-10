@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avya | Process</title>
+  <meta name="description" content="A clear, step-by-step process for getting support, implementation, automation, and web solutions from Avya." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="site-shell nav">
+      <a class="brand" href="index.html"><span class="brand-mark">A</span><span>Avya</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="ghost-btn" href="contact.html">Talk to me</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="site-shell">
+    <section class="page-intro">
+      <article class="intro">
+        <div class="eyebrow">✦ Process</div>
+        <h2>Simple workflow, clear communication, and practical delivery.</h2>
+        <p>Each project follows a straightforward path: understand the need, plan the right solution, build it carefully, and support it after launch.</p>
+      </article>
+      <article class="feature-card">
+        <h2>Why this approach works</h2>
+        <p>It keeps the work efficient, reduces surprises, and ensures the final result fits your business instead of creating extra complexity.</p>
+      </article>
+    </section>
+
+    <section class="process-grid" style="margin-top: 14px;">
+      <article class="process-card">
+        <div class="step"><div class="step-no">1</div><div><h3>Discover</h3><p>I learn about your current challenges, goals, and the systems you already use.</p></div></div>
+      </article>
+      <article class="process-card">
+        <div class="step"><div class="step-no">2</div><div><h3>Plan</h3><p>I recommend the best solution, tools, timeline, and setup based on your business needs.</p></div></div>
+      </article>
+      <article class="process-card">
+        <div class="step"><div class="step-no">3</div><div><h3>Build</h3><p>I create, test, and refine the solution so it works well and matches your expectations.</p></div></div>
+      </article>
+      <article class="process-card">
+        <div class="step"><div class="step-no">4</div><div><h3>Support</h3><p>After delivery, I stay available for updates, fixes, improvements, and long-term assistance.</p></div></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-shell">© 2026 Avya • Freelance IT & Digital Solutions</footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = document.body.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+    }
+  </script>
+</body>
+</html>
